@@ -1,0 +1,24 @@
+# 🔐 Environment variables
+.env
+.env.*
+!.env.example
+
+# 📦 Node modules
+node_modules/
+
+# ⚛️ Build files
+build/
+dist/
+
+# 🧠 Logs
+*.log
+
+# 💻 OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 🔑 Sensitive files
+config/*.json
+secrets.json
