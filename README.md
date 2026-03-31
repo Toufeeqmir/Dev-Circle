@@ -23,10 +23,7 @@ Dev Circle is a web-based platform designed to connect developers, share ideas, 
 
 ---
 
-## 📊 Project Status
 
-* ✅ Backend: Completed
-* 🚧 Frontend: In Progress (approximately 50% completed)
 
 ---
 
