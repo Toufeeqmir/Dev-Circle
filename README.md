@@ -63,15 +63,11 @@ npm start
 
 ---
 
-## 🔒 Note
+## 🔒 Security
 
-Sensitive files like `.env` are not included in this repository for security reasons.
-
----
-
-## 🤝 Contribution
-
-This project is currently under development. Contributions and suggestions are welcome.
+* Sensitive files like `.env` are not included in this repository
+* `node_modules` is ignored using `.gitignore`
+* `.gitignore` is used to prevent uploading unnecessary and sensitive files
 
 ---
 

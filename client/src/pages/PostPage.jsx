@@ -14,7 +14,7 @@ const PostPage = () =>{
 
      useEffect(() =>{
         const fetchPost = async () =>{
-            const postRes = await api.get(`/post/${postId}`)
+            const postRes = await api.get(`/posts/${postId}`)
              setPost(postRes.data.post)
              const commentRes = await api.get(`/comments/${postId}`)
              setComments(commentRes.data.comments)

@@ -3,7 +3,7 @@ import io from "socket.io-client"
 
 import useAuth from "./useAuth"
 
-//stores the socket connection withou causing re-renders.
+//stores the socket connection without causing re-renders.
  const useSocket =  () =>{
     const socketRef = useRef(null)
     const { user } = useAuth()
