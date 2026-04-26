@@ -16,12 +16,12 @@ const VoteButtons = ({ postId, voteScore, onVote }) => {
             <button
                 onClick={() => handleVote("up")}
                 className="text-gray-400 hover:text-orange-500 font-bold"
-            >▲</button>
+            >up</button>
             <span className="text-xs font-bold text-gray-700">{voteScore}</span>
             <button
                 onClick={() => handleVote("down")}
                 className="text-gray-400 hover:text-blue-500 font-bold"
-            >▼</button>
+            >down</button>
         </div>
     )
 }

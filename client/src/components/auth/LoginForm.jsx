@@ -16,12 +16,8 @@ const LoginForm = () => {
         try {
             const response = await api.post("/auth/login", { email, password })
             dispatch(setCredentials({
-                user: {
-                    _id: response.data._id,
-                    username: response.data.username,
-                    email: response.data.email
-                },
-                token: response.data.token
+                user: response.data.user,
+                token: response.data.token,
             }))
             navigate("/")
         } catch (error) {

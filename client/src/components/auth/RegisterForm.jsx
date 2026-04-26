@@ -16,9 +16,10 @@ const RegisterForm = () => {
         e.preventDefault()
         try {
             const response = await api.post("/auth/register", { username, email, password })
+            const { _id, username: u, email: em, token } = response.data
             dispatch(setCredentials({
-                user: response.data.user,
-                token: response.data.token
+                user: { _id, username: u, email: em },
+                token,
             }))
             navigate("/")
         } catch (error) {

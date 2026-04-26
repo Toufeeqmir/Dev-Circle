@@ -11,7 +11,9 @@ const Navbar = () => {
             {isAuthenticated ? (
                           <div className="flex items-center gap-4">
     <Link to="/create-post" className="bg-orange-500 text-white text-sm px-4 py-1 rounded-full font-bold">+ Create Post</Link>
-    <span className="text-sm text-gray-300">Welcome, {user?.username}</span>
+    <Link to={`/u/${user?.username}`} className="text-sm text-gray-300 hover:text-white">
+        Welcome, {user?.username}
+    </Link>
     <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold">Logout</button>
 </div>
             ) : (
